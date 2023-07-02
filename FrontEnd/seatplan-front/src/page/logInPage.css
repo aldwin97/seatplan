@@ -94,7 +94,8 @@ input:valid ~ .user-label {
 }
 
 .toggle-password.active {
-  color: #f44336; /* Set the desired color for the active state */
+  color: #f44336;
+   /* Set the desired color for the active state */
 }
 
 /* Media Queries for Responsiveness */
