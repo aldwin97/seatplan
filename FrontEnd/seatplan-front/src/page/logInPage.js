@@ -47,7 +47,7 @@ const LogInPage = () => {
   className={`toggle-password ${showPassword ? 'active' : ''}`}
   onClick={togglePasswordVisibility}
 >
-  {showPassword ? <FaEyeSlash /> : <FaEye />}
+  {showPassword ? <FaEye /> : <FaEyeSlash  />}
 </span>
 
         </div>
