@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import './logInPage.css';
+import {useNavigate} from 'react-router-dom'
 
 const LogInPage = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
+
+  const viewSeatPageHandleClick = () =>{
+    navigate('/viewSeatPage')
+  }
+
+
 
   return (
     <body>
@@ -45,8 +53,8 @@ const LogInPage = () => {
         </div>
 
         <button class="sub" type="submit">SIGN IN</button>
-        <button class="sub" type="submit">VIEW SEAT PLAN</button>
-        <a href="#">Need Help?</a>
+        <button class="sub" type="submit" onClick={viewSeatPageHandleClick}>VIEW SEAT PLAN</button>
+        <a href="facebook.com">Need Help?</a>
       </form>
     </div>
     </body>
